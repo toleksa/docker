@@ -132,3 +132,8 @@ dmypy.json
 ars-price.log
 best-price.txt
 price-log.txt
+price-log.txt-old
+
+# old git repo
+.git-bck/
+
