@@ -1,0 +1,9 @@
+production:
+  adapter: "mysql2"
+  host: "localhost"
+  port: "3306"
+  socket: "/mysql.sock"
+  username: "redmine"
+  password: "change-this-password1"
+  database: "redmine"
+
