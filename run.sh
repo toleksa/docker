@@ -6,5 +6,5 @@
 ~/docker/shellinabox/run.sh
 ~/docker/redmine/run.sh
 ~/docker/plex/run.sh
-~/docker/jenkins/run.sh
+#~/docker/jenkins/run.sh
 
