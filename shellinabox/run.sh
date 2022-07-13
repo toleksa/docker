@@ -5,7 +5,7 @@ docker rm shellinabox
 
 docker pull sspreitzer/shellinabox:latest
 
-. .env
+. `dirname "$(readlink -f "$0")"`/.env
 SCRIPT="https://raw.githubusercontent.com/toleksa/configs/main/shellinabox.sh"
 #SCRIPT="http://192.168.0.2:8765/configs/shellinabox.sh"
 
