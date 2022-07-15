@@ -22,7 +22,7 @@ ARG="$ARG set key top right autotitle columnheader ;"
 ARG="$ARG set grid;"
 ARG="$ARG set datafile separator whitespace;"
 ARG="$ARG set term png medium size 1200,800;"
-ARG="$ARG plot '-' using 1:2 with lines lt 1 lw 2 linecolor rgb 'blue' title 'Price in Eurocents', '-' using 1:3 with lines lt 1 lw 2 linecolor rgb 'red' title 'EUR/ARS'"
+ARG="$ARG plot '-' using 1:2 with lines lt 1 lw 2 linecolor rgb 'blue' title '1000 ARS Steam Cupon cost in Eurocents', '-' using 1:3 with lines lt 1 lw 2 linecolor rgb 'red' title 'Currency - 1000 ARS to EUR'"
 
 CMD="gawk '{ if (\$1 == 0) next; print \$2\" \"\$1\" \"\$3 }' price-log.txt"
 (eval $CMD ; echo 'e'; eval $CMD) | cat | docker run --rm -i --name gnuplot toleksa/gnuplot -p -e "$ARG" > /www/files/out.png
