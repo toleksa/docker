@@ -10,7 +10,7 @@ import random
 import datetime
 from dateutil.relativedelta import relativedelta
 
-def main(site):
+def mainpage(site):
     response = "<h1>Hello World!</h1>"
     return HttpResponse(response)
 
