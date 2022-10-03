@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class AtkdjangoConfig(AppConfig):
+class MonConfig(AppConfig):
     name = 'cofi'
