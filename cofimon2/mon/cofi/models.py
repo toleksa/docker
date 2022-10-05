@@ -18,4 +18,4 @@ class Report(models.Model):
   dlfile = models.FileField(upload_to=get_upload_path, blank=False, null=False)
 
 class ValidInstance(models.Model):
-  name = models.CharField(max_length=20)
+  name = models.CharField(max_length=20, primary_key=True, unique=True)
