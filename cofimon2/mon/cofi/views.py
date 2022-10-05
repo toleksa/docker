@@ -4,7 +4,7 @@ from django.http import HttpResponse, HttpRequest
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Count, F, Sum, Lookup, Field
 from django.db.models.query import QuerySet
-#from .models import Babe, SiteBabe, AllBabe, Vote, Novote, BestScore, ExternalSite
+from .models import Report,ValidInstance
 import os
 import random
 import datetime
