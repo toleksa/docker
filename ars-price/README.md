@@ -18,7 +18,7 @@ General idea is to monitor current prices of Steam ARS Payment Card on popular w
 - Draw price chart -> allows to observe trends
 - Alert when price is lowest
 
-![chart](https://raw.githubusercontent.com/docker/ars-price/main/doc/out.png)
+![chart](https://raw.githubusercontent.com/toleksa/docker/main/ars-price/doc/out.png)
 
 ## Usage
 
