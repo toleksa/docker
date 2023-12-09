@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
-if [ $# -eq 0 ]
-  then
-    TAG='latest'
-  else
-    TAG=$1
-fi
+set -x 
 
-PWD=$(pwd)
 PROJECT=$(dirname "$(readlink -f "$0")" | gawk -F"/" '{ print $NF }')
 
-docker build -t $PROJECT:$TAG .
+#update source
+cd src/nut
+git pull
+COMMIT="git-$(git rev-parse --short HEAD)"
+cd -
+
+podman build -t $PROJECT:$COMMIT .
+podman tag $PROJECT:$COMMIT $PROJECT:latest
 
