@@ -1,1 +1,15 @@
 **/.git
+.github
+.gitignore
+.editorconfig
+.pylintrc
+gui
+nut_gui*
+nut.pyproj
+.pre-commit-config.yaml
+.pylintrc
+pytest.ini
+tests
+tests-gui
+windows_driver
+
