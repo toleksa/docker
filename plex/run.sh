@@ -21,8 +21,8 @@ docker run \
 -e PLEX_CLAIM="hCFeKiZ6mKfNDZDLxtC_" \
 -e ADVERTISE_IP="http://192.168.22.1:32400/" \
 -h plex \
---mount type=bind,source=/data/plex/config/,target=/config \
---mount type=bind,source=/data/plex/transcode/,target=/transcode \
+--mount type=bind,source=/home/plex/config/,target=/config \
+--mount type=bind,source=/home/plex/transcode/,target=/transcode \
 --mount type=bind,source=/storage/storage/mov/,target=/data \
 --mount type=bind,source=/storage/warrez/done/000-mov,target=/data2 \
 plexinc/pms-docker
