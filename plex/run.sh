@@ -13,12 +13,14 @@ docker rm plex
 #-p 32413:32413/udp \
 #-p 32414:32414/udp \
 
+. .env
+
 docker run \
 -d \
 --name plex \
 -p 32400:32400/tcp \
 -e TZ="Europe/Zurich" \
--e PLEX_CLAIM="hCFeKiZ6mKfNDZDLxtC_" \
+-e PLEX_CLAIM=$PLEX_CLAIM \
 -e ADVERTISE_IP="http://192.168.22.1:32400/" \
 -h plex \
 --mount type=bind,source=/home/plex/config/,target=/config \
