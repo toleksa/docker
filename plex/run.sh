@@ -13,7 +13,7 @@ docker rm plex
 #-p 32413:32413/udp \
 #-p 32414:32414/udp \
 
-. .env
+. /home/art/docker/plex/.env
 
 docker run \
 -d \
@@ -25,7 +25,6 @@ docker run \
 -h plex \
 --mount type=bind,source=/home/plex/config/,target=/config \
 --mount type=bind,source=/home/plex/transcode/,target=/transcode \
---mount type=bind,source=/storage/storage/mov/,target=/data \
 --mount type=bind,source=/storage/warrez/done/000-mov,target=/data2 \
 plexinc/pms-docker
 
